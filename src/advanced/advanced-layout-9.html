@@ -6,13 +6,45 @@
     <title>Advanced Layout 9</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      header, nav, main, footer {
+        border-radius: 50%;
+        aspect-ratio: 1;
+      }
+      body {
+        position: relative;
+        display: grid;
+        max-width: 30em;
+        margin: 2rem auto;
+      }
+      header {
+        position: absolute;
+        width: 20%;
+        top: 0;
+        left: 0;
+      }
+      nav {
+        position: absolute;
+        top: -1rem;
+        right: 0;
+        z-index: -1;
+      }
+      footer {
+        position: absolute;
+        width: 30%;
+        left: 0;
+        bottom: 0;
+      }
+      main {
+        font-size: 4em;
+        display: grid;
+        place-items: center;
+      }
     </style>
   </head>
   <body id="advanced-layout-9">
     <header><h1>Advanced Layout 9</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
+    <main>🥳</main>
     <footer></footer>
   </body>
 </html>
