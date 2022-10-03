@@ -6,7 +6,36 @@
     <title>Advanced Layout 4</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        max-width: 30em;
+        gap: 0;
+        margin: 0 auto;
+        padding: 1em;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+      }
+      main {
+        font-size: 4em;
+        display: grid;
+        place-items: center;
+        clip-path: polygon(0 1rem, 0% 100%, 100% 100%, 100% 0);
+        transform: translate(-.5rem, .5rem);
+      }
+      nav {
+        order: -1;
+        margin-bottom: -1rem;
+        clip-path: polygon(0 0, 0% 100%, 100% calc(100% - 1rem), 100% 0);
+        transform: translate(-.5rem, -.5rem);
+      }
+      footer {
+        margin-top: -1rem;
+        clip-path: polygon(0 1rem, 0% 100%, 100% 100%, 100% 0);
+        transform: translate(.5rem, .5rem);
+      }
+      header {
+        clip-path: polygon(0 0, 0% 100%, 100% calc(100% - 1rem), 100% 0);
+        transform: translate(.5rem, -.5rem);
+      }
     </style>
   </head>
   <body id="advanced-layout-4">
